@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Tilt Prism', cursive;
+    cursor: pointer;
+}
+body{
+    height: 98vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    background: linear-gradient(to right, #ce7474,#e5e572)
+}
+form{
+    height: 30rem;
+    width: 25rem;
+    display: flex;
+    flex-direction: column;
+    background: rgba(255,255,255,0.11);
+    box-shadow: 0 8px 32px 0 black;
+    border-radius: 12px;
+    border-left: 1px solid whitesmoke;
+    border-top: 1px solid whitesmoke;
+}
+form::after{
+    content: '';
+    position: absolute;
+    top: 8%;
+    left: 32%;
+    width: 150px;
+    height: 150px;
+    background: greenyellow;
+    border-radius: 50%;
+    z-index: -6;
+    opacity: .3;
+}
+form::before{
+    content: '';
+    position: absolute;
+    bottom: 8%;
+    left: 57%;
+    width: 200px;
+    height: 200px;
+    background: magenta;
+    border-radius: 50%;
+    z-index: -6;
+    opacity: .3;
+}
+h1{
+    font-size:50px;
+    text-align: center;
+    color: aliceblue;
+    text-shadow:2px 2px 4px rgba(0, 0, 0,.2);
+    letter-spacing: 3px;
+    margin-bottom: 7%;
+    opacity: 2  ;
+}
+label{
+    opacity: .9;
+    font-size: 20px;
+    margin-left: 10%;
+    color: whitesmoke;
+    text-shadow: 2px 2px 4px rgba(0, 0,0, .2);
+
+    
+}
+input{
+    width: 80%;
+    margin: 5% auto;
+    margin-bottom: 8%;
+    border:none;
+    outline: none;
+    background: transparent;
+    color: whitesmoke;
+    border-bottom: 1px solid rgba(255,255,255,0.6);
+    opacity: .6;
+}
+ button{
+    
+    width: 50%;
+    margin: 3% auto;
+    color: black;
+    font-size: 15px;
+    opacity: .9;
+    background: rgba(255,255,255,0.6);
+    padding: 10px 30px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    text-shadow: 2px 2px 4px rgba(255,255,255,0.6) ;
+    box-shadow: 3px 3px 5px rgba(31,38,135,.37);
+    border-top: 1px solid  rgba(255,255,255,0.6);
+    border-left: 1px solid rgba(255,255,255,.3);
+}    
+a{
+    font-size: 12px;
+    text-align: center;
+}
+
+
+button:focus {
+  box-shadow: whitesmoke 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+}
+
+button:hover {
+  box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, wheat 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+button:active {
+  box-shadow:#f3baba 0 3px 7px inset;
+  transform: translateY(2px);
+}
